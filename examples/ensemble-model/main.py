@@ -1,3 +1,4 @@
+import joblib
 import promote
 from schema import Schema
 
@@ -8,7 +9,6 @@ PROMOTE_URL = "https://promote.c.yhat.com/"
 p = promote.Promote(USERNAME, API_KEY, PROMOTE_URL)
 
 # load our ensemble model weights
-from sklearn.externals import joblib
 ENSEMBLE = joblib.load('./objects/ensemble.pkl')
 
 # add metadata
