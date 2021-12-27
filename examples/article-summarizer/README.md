@@ -19,16 +19,11 @@ In a terminal shell run:
 ```bash
 $ pip install -r requirements.txt
 
-# we need to install the 'punkt' nltk package for the NLP summarization
-$ python -c "import nltk; nltk.download('punkt')"
-
 # lastly, deploy the model
 $ python main.py
 ```
 
-**The `promote.sh` file**
-
-Its important to note that because the `newspaper` package requires an NLP dataset, we'll need to add it to the model environment when we deploy.  We can add `python -c "import nltk; nltk.download('punkt')"` to the `promote.sh` script to ensure that it is installed before our model builds.
+Its important to note that because the `newspaper` package requires an NLP dataset.
 
 ### Example input:
 

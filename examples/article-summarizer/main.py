@@ -1,8 +1,8 @@
 import promote
 from schema import Schema
-
-import newspaper
 from newspaper import Article
+import nltk
+nltk.download('punkt')
 
 USERNAME = 'username'
 API_KEY = 'your_api_key'

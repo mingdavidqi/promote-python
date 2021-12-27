@@ -1,9 +1,9 @@
+import joblib
 import promote
 from schema import Schema #https://pypi.python.org/pypi/schema
 
 from helpers import getclass
 # load in our saved model weights
-from sklearn.externals import joblib
 WEIGHTS = joblib.load('./objects/model_weights.pkl')
 
 # instanciate the Promote class with our API information
